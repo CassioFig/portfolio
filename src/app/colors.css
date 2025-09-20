@@ -1,0 +1,26 @@
+:root {
+  --color-background: #ffffff;
+  --color-foreground: #000000;
+
+  --color-dark: #181818;
+
+  --color-green-1: #52F26A;
+  --color-green-2: #22C55E;
+  --color-green-3: #10b981;
+
+  --color-666: #666666;
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  --color-dark-0a: #0a0a0a;
+  --color-fg-eded: #ededed;
+}
+
+.bg-dark { background-color: var(--color-dark); }
+.border-dark { border-color: var(--color-dark); }
+.text-dark { color: var(--color-dark); }
+.hover-bg-dark:hover { background-color: var(--color-dark); }
+.bg-666 { background-color: var(--color-666); }
+.text-green-1 { color: var(--color-green-1); }
+.bg-gradient-green { background: linear-gradient(135deg, var(--color-green-1) 0%, var(--color-green-2) 100%); }
+.fill-green-1 { fill: var(--color-green-1); }

@@ -86,7 +86,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="fixed top-32 right-8 z-40 bg-black/80 backdrop-blur-sm rounded-2xl p-4 shadow-2xl border border-[#181818]">
+      <div className="fixed top-32 right-8 z-40 bg-black/80 backdrop-blur-sm rounded-2xl p-4 shadow-2xl border border-dark">
         <div className="relative flex flex-col items-start">
           <div className="absolute left-4 top-4 bottom-4 w-px bg-gradient-to-b from-gray-600 to-gray-700 z-0" style={{ right: 'auto' }} />
           {sections.map((section, index) => (
@@ -149,14 +149,14 @@ export default function Home() {
             {skills.map((skill) => {
               const Icon = skill.icon;
               return (
-                <div key={skill.id} className="border-[#181818] border-2 rounded-lg px-6 py-6">
+                <div key={skill.id} className="border-dark border-2 rounded-lg px-6 py-6">
                   <div className='flex items-center gap-4'>
-                    <Icon color='#10b981' />
+                    <Icon style={{ color: 'var(--color-green-3)' }} />
                     <h3 className="text-2xl font-semibold text-white">{skill.title}</h3>
                   </div>
                   <ul className="flex flex-wrap mt-4 gap-2">
                     {skill.items.map(item => (
-                      <li key={item} className="bg-[#181818] px-4 py-2 rounded-lg">{item}</li>
+                      <li key={item} className="bg-dark px-4 py-2 rounded-lg">{item}</li>
                     ))}
                   </ul>
                 </div>
