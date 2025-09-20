@@ -1,4 +1,12 @@
+'use client';
+
+import React from 'react';
+import { useLocale } from '@/contexts/locale-context';
+import { LanguageSwitcher } from './language-switcher';
+
 export const Header: React.FC = () => {
+	const { t } = useLocale();
+
 	return (
 		<header className="bg-black border-b border-dark h-24 flex items-center justify-between px-8 fixed top-0 w-full z-50">
 			<section className="relative z-10 mt-23">
@@ -11,7 +19,7 @@ export const Header: React.FC = () => {
 						</defs>
 						<text className="text-[11px] font-medium tracking-wider animate-spin origin-center" style={{fill: 'var(--color-green-1)', animationDuration: '20s'}}>
 							<textPath href="#circle" startOffset="0%">
-								CASSIO FIGUEIREDO • FULL STACK DEVELOPER • BRAZIL •
+								{t.header.logo}
 							</textPath>
 						</text>
 					</svg>
@@ -26,27 +34,28 @@ export const Header: React.FC = () => {
 					<ul className="flex space-x-2">
 						<li>
 							<button className="px-4 py-2 rounded-lg hover-bg-dark transition-all duration-450 transform hover:scale-105 text-white cursor-pointer">
-								Home
+								{t.header.menu.home}
 							</button>
 						</li>
 						<li>
 							<button className="px-4 py-2 rounded-lg hover-bg-dark transition-all duration-450 transform hover:scale-105 text-white cursor-pointer">
-								Resume
+								{t.header.menu.resume}
 							</button>
 						</li>
 						<li>
 							<button className="px-4 py-2 rounded-lg hover-bg-dark transition-all duration-450 transform hover:scale-105 text-white cursor-pointer">
-								Projects
+								{t.header.menu.projects}
 							</button>
 						</li>
 						<li>
 							<button className="px-4 py-2 rounded-lg hover-bg-dark transition-all duration-450 transform hover:scale-105 text-white cursor-pointer">
-								Contact
+								{t.header.menu.contact}
 							</button>
 						</li>
 					</ul>
 				</nav>
 			</section>
+			<section className="flex items-center"><LanguageSwitcher /></section>
 		</header>
 	)
 }

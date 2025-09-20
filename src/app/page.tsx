@@ -4,9 +4,11 @@ import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import me_pixar from '../assets/images/me_pixar.webp';
 import { CodeXml, Server, TabletSmartphone } from 'lucide-react';
+import { useLocale } from '@/contexts/locale-context';
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState('about');
+  const { t } = useLocale();
 
   const sections = [
     { id: 'about', title: 'About' },
@@ -108,7 +110,7 @@ export default function Home() {
                     : 'text-gray-300 group-hover:text-white'
                     }`}
                 >
-                  {section.title}
+                  {t.pages.home.sections[section.id as keyof typeof t.pages.home.sections].navigationTitle}
                 </span>
               </button>
             </div>
@@ -120,16 +122,14 @@ export default function Home() {
         <section id="about" className="w-full max-w-4xl mx-auto pb-16 pt-32 px-8 min-h-screen flex flex-col justify-center">
           <div className="text-center mb-12">
             <h1 className="text-6xl font-bold text-white mb-2">Cassio Figueiredo</h1>
-            <p className="text-xl text-green-400 font-medium">Full Stack Developer</p>
+            <p className="text-xl text-green-400 font-medium">{ t.jobTitle }</p>
           </div>
 
           <div className="flex items-center mb-8">
             <div className="w-12 h-1 bg-gradient-to-r from-green-400 to-emerald-500 mr-4 rounded-full"></div>
-            <h2 className="text-4xl font-bold text-white">About me</h2>
+            <h2 className="text-4xl font-bold text-white">{ t.pages.home.sections.about.title }</h2>
           </div>
-          <p className="text-white text-lg leading-relaxed mb-8">
-            Bachelor of Computer Science with approximately four years of professional experience in full-stack development, specializing in backend solutions. Possesses a strong background in leading projects, optimizing workflows, and mentoring teams, utilizing agile methodologies. Skilled in code review processes to ensure high-quality, maintainable code. Passionate about delivering impactful solutions and continuously enhancing expertise.
-          </p>
+          <p className="text-white text-lg leading-relaxed mb-8">{ t.pages.home.sections.about.description }</p>
           <div className="flex justify-center">
             <Image
               alt="Cassio Figueiredo"
@@ -142,7 +142,7 @@ export default function Home() {
         <section id="skills" className="w-full max-w-4xl mx-auto py-16 px-8 min-h-screen flex flex-col justify-center">
           <div className="flex items-center mb-8">
             <div className="w-12 h-1 bg-gradient-to-r from-green-400 to-emerald-500 mr-4 rounded-full"></div>
-            <h2 className="text-4xl font-bold text-white">Skills</h2>
+            <h2 className="text-4xl font-bold text-white">{ t.pages.home.sections.skills.title }</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
@@ -152,7 +152,7 @@ export default function Home() {
                 <div key={skill.id} className="border-dark border-2 rounded-lg px-6 py-6">
                   <div className='flex items-center gap-4'>
                     <Icon style={{ color: 'var(--color-green-3)' }} />
-                    <h3 className="text-2xl font-semibold text-white">{skill.title}</h3>
+                    <h3 className="text-2xl font-semibold text-white">{ t.pages.home.skills[skill.id as keyof typeof t.pages.home.skills] }</h3>
                   </div>
                   <ul className="flex flex-wrap mt-4 gap-2">
                     {skill.items.map(item => (
