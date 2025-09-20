@@ -28,6 +28,78 @@ export const EN = {
 				web: "Web Development",
 				backend: "Backend Development",
 			}
+		},
+		resume: {
+			sections: {
+				education: {
+					title: "Education",
+					data: [
+						{
+							degree: "Computer Science Bachelor’s degree",
+							institution: "Tiradentes University",
+							location: "Aracaju, Brazil",
+							period: "Jan. 2019 - July 2023",
+						},
+						{
+							degree: "Web Developer Co-op Diploma ",
+							institution: "Tamwood Careers College",
+							location: "Vancouver, Canada",
+							period: "Apr. 2025 - May 2026",
+						}
+					]
+				},
+				experience: {
+					title: "Experience",
+					data: [
+						{
+							company: "Tiradentes Group",
+							location: "Aracaju, Brazil",
+							history: [
+								{
+									position: "Data Analytics Intern",
+									period: "May 2021 - Oct. 2021",
+									description: `Developed Power BI dashboards for senior management, automating Excel-based reports and saving 10+ hours per week of manual work;
+									Utilization of ETL processes with Python and Pentaho;
+									Data analysis with PySpark;
+									Created and optimized complex SQL queries to process datasets with over 1 million records;
+									Managed the corporate data warehouse using Oracle Database, ensuring data integrity, performance, and scalability for analytical operations;
+									Collaborated on a feature that allows university students to track academic progress, benefiting over 2,000 students;
+									`,
+									technologies: ["Python", "PySpark", "Pentaho", "Power BI", "Oracle"]
+								},
+								{
+									position: "IT Developer",
+									period: "Nov. 2021 - Jan. 2024",
+									description: `Developed backend solutions using the Node.js, Express, TypeScript, PostgreSQL, and Redis stack, focusing on performance, scalability, and maintainability;
+										Designed and implemented new web applications using React, delivering user-friendly interfaces and responsive components;
+										Applied SOLID principles, Clean Architecture, and design patterns to ensure clean, testable, and scalable codebases;
+										Participated in the integration of payment systems, ensuring secure and reliable transaction processing;
+										Utilized Google Cloud Platform (GCP) to deploy applications;
+										Led a team of interns in the development of a new system, coordinating tasks, reviewing code, and ensuring on-time delivery; This initiative reduced development time by 40% and significantly boosted team performance;
+										`,
+									technologies: ["React", "Node.js", "TypeScript", "PostgreSQL", "Redis", "GCP"]
+								}
+							]
+						},
+						{
+							company: "INFOX",
+							location: "Aracaju, Brazil",
+							history: [
+								{
+									position: "Java Developer",
+									period: "Feb. 2024 - April 2025",
+									description: `Responsible for the maintenance and evolution of Infox BPM and Infox eCP, business process management (BPM) solutions that enable the modeling and automation of business processes;
+										Developed backend solutions using Java 8, Criteria, Hibernate, JPA, and Jboss;
+										Managed and maintained databases using Liquibase, PostgreSQL, and SQLServer;
+										Provided customer support and resolved technical issues for TCE-PE, TCM-PA, TCM-BA, and CFM, ensuring high customer satisfaction and operational efficiency;
+									`,
+									technologies: ["Java", "Criteria", "Hibernate", "JPA", "JSF", "Jboss", "Liquibase", "PostgreSQL", "SQLServer"]
+								}
+							]
+						}
+					]
+				}
+			}
 		}
 	}
 } as const

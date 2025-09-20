@@ -1,11 +1,14 @@
 'use client';
 
 import React from 'react';
+import { usePathname } from 'next/navigation';
 import { useLocale } from '@/contexts/locale-context';
 import { LanguageSwitcher } from './language-switcher';
+import Link from 'next/link';
 
 export const Header: React.FC = () => {
 	const { t } = useLocale();
+	const pathname = usePathname();
 
 	return (
 		<header className="bg-black border-b border-dark h-24 flex items-center justify-between px-8 fixed top-0 w-full z-50">
@@ -33,24 +36,24 @@ export const Header: React.FC = () => {
 				<nav>
 					<ul className="flex space-x-2">
 						<li>
-							<button className="px-4 py-2 rounded-lg hover-bg-dark transition-all duration-450 transform hover:scale-105 text-white cursor-pointer">
+							<Link href="/" className={`px-4 py-2 rounded-lg hover-bg-dark transition-all duration-450 transform hover:scale-105 text-white cursor-pointer ${pathname === '/' ? 'bg-dark' : ''}`}>
 								{t.header.menu.home}
-							</button>
+							</Link>
 						</li>
 						<li>
-							<button className="px-4 py-2 rounded-lg hover-bg-dark transition-all duration-450 transform hover:scale-105 text-white cursor-pointer">
+							<Link href="/resume" className={`px-4 py-2 rounded-lg hover-bg-dark transition-all duration-450 transform hover:scale-105 text-white cursor-pointer ${pathname === '/resume' ? 'bg-dark' : ''}`}>
 								{t.header.menu.resume}
-							</button>
+							</Link>
 						</li>
 						<li>
-							<button className="px-4 py-2 rounded-lg hover-bg-dark transition-all duration-450 transform hover:scale-105 text-white cursor-pointer">
+							<Link href="/projects" className={`px-4 py-2 rounded-lg hover-bg-dark transition-all duration-450 transform hover:scale-105 text-white cursor-pointer ${pathname === '/projects' ? 'bg-dark' : ''}`}>
 								{t.header.menu.projects}
-							</button>
+							</Link>
 						</li>
 						<li>
-							<button className="px-4 py-2 rounded-lg hover-bg-dark transition-all duration-450 transform hover:scale-105 text-white cursor-pointer">
+							<Link href="/contact" className={`px-4 py-2 rounded-lg hover-bg-dark transition-all duration-450 transform hover:scale-105 text-white cursor-pointer ${pathname === '/contact' ? 'bg-dark' : ''}`}>
 								{t.header.menu.contact}
-							</button>
+							</Link>
 						</li>
 					</ul>
 				</nav>

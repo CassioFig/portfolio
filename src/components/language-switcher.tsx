@@ -18,7 +18,7 @@ export const LanguageSwitcher: React.FC = () => {
 		>
 			<div className="flex items-center space-x-2">
 				<span className="text-sm font-medium">
-					{locale === 'en' ? '🇺🇸 EN' : '🇧🇷 PT'}
+					{locale === 'en' ? '🇨🇦 EN' : '🇧🇷 PT'}
 				</span>
 				<svg 
 					className="w-4 h-4 transition-transform duration-200" 
