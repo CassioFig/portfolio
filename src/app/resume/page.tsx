@@ -4,7 +4,7 @@ import { useLocale } from '@/contexts/locale-context';
 import { GraduationCap, Briefcase, Download } from 'lucide-react';
 
 export default function ResumePage() {
-	const { t } = useLocale();
+	const { t, locale } = useLocale();
 
 	return (
 		<main className="bg-black min-h-screen">
@@ -75,18 +75,24 @@ export default function ResumePage() {
 				</div>
 			</section>
 
-			{/* <button 
+			<button 
 				onClick={() => {
 					const link = document.createElement('a');
-					link.href = '/cv-cassio-figueiredo.pdf';
-					link.download = 'CV-Cassio-Figueiredo.pdf';
+					link.href = `${locale === 'en' 
+						? '/assets/resumes/Cassio_Figueiredo_Resume.pdf' 
+						: '/assets/resumes/Curriculo_Cassio_Figueiredo.pdf'
+					}`;
+					link.download = `${locale === 'en' 
+						? 'Cassio_Figueiredo_Resume.pdf' 
+						: 'Curriculo_Cassio_Figueiredo.pdf'
+					}`;
 					link.click();
 				}}
 				className="fixed bottom-8 right-8 bg-gradient-to-r from-green-400 to-emerald-500 hover:from-green-500 hover:to-emerald-600 text-black font-semibold p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-50 group"
 				aria-label="Download CV"
 			>
-				<Download size={24} className="group-hover:animate-bounce" />
-			</button> */}
+				<Download size={24} className='hover:cursor-pointer'/>
+			</button>
 		</main>
 	);
 }
