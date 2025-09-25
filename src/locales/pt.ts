@@ -107,12 +107,12 @@ export const PT = {
 		projects: {
 			sections: {
 				projects: {
-					title: "Projects",
+					title: "Projetos",
 					data: [
 						{
 							image: "flamengo-project.png",
-							name: "Flamengo Website Clone",
-							description: "A clone of the official Flamengo football club website, built with HTML, CSS, and JavaScript.",
+							name: "Clone do Site do Flamengo",
+							description: "Um clone do site oficial do clube de futebol Flamengo, construído com HTML, CSS e JavaScript.",
 							link: "https://flamengo-clone.netlify.app/",
 							repositoryLink: "https://github.com/CassioFig/flamengo-webpage",
 							technologies: ["HTML5", "CSS3", "JavaScript"]
@@ -120,11 +120,56 @@ export const PT = {
 						{
 							image: "nec-project.png",
 							name: "Nec Cup Draft",
-							description: "A web application for drafting players for the Nec Cup.",
+							description: "Uma aplicação web para draftar jogadores para a Copa Nec.",
 							link: "https://nec-cup-draft.netlify.app/",
 							repositoryLink: "",
 							technologies: ["Next.js", "TypeScript"]
 						}
+					]
+				}
+			}
+		},
+		contact: {
+			sections: {
+				contact: {
+					title: "Contact",
+					description: "Get in touch with me through any of the channels below. I'm always open to discussing new opportunities and interesting projects.",
+					data: [
+						{
+							type: "email",
+							label: "Email",
+							value: "cassio.figueiredof@gmail.com",
+							href: "mailto:cassio.figueiredof@gmail.com",
+							isExternal: false,
+						},
+						{
+							type: 'github',
+							label: 'GitHub',
+							value: 'CassioFig',
+							href: 'https://github.com/CassioFig',
+							isExternal: true,
+						},
+						{
+							type: 'linkedin',
+							label: 'LinkedIn',
+							value: 'cassiofig',
+							href: 'https://www.linkedin.com/in/cassiofig/',
+							isExternal: true,
+						},
+						{
+							type: 'phone-br',
+							label: 'Phone (Brazil)',
+							value: '+55 79 99944-7667',
+							href: 'tel:+5579999447667',
+							isExternal: false,
+						},
+						{
+							type: 'phone-ca',
+							label: 'Phone (Canada)',
+							value: '+1 236-863-5277',
+							href: 'tel:+12368635277',
+							isExternal: false,
+						},
 					]
 				}
 			}

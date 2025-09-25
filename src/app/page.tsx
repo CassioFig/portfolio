@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import me_pixar from '../assets/images/me_pixar.webp';
+import me from '../assets/images/me.jpeg';
 import { CodeXml, Server, TabletSmartphone } from 'lucide-react';
 import { useLocale } from '@/contexts/locale-context';
 
@@ -133,7 +134,7 @@ export default function Home() {
           <div className="flex justify-center">
             <Image
               alt="Cassio Figueiredo"
-              src={me_pixar}
+              src={me}
               className="w-64 h-64 rounded-full object-cover shadow-lg border-4 border-gradient-to-r from-green-400 to-emerald-500 shadow-green-400/30"
             />
           </div>

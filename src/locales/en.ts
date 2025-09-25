@@ -125,6 +125,51 @@ export const EN = {
 					]
 				}
 			}
+		},
+		contact: {
+			sections: {
+				contact: {
+					title: "Contact",
+					description: "Get in touch with me through any of the channels below. I'm always open to discussing new opportunities and interesting projects.",
+					data: [
+						{
+							type: "email",
+							label: "Email",
+							value: "cassio.figueiredof@gmail.com",
+							href: "mailto:cassio.figueiredof@gmail.com",
+							isExternal: false,
+						},
+						{
+							type: 'github',
+							label: 'GitHub',
+							value: 'CassioFig',
+							href: 'https://github.com/CassioFig',
+							isExternal: true,
+						},
+						{
+							type: 'linkedin',
+							label: 'LinkedIn',
+							value: 'cassiofig',
+							href: 'https://www.linkedin.com/in/cassiofig/',
+							isExternal: true,
+						},
+						{
+							type: 'phone-br',
+							label: 'Phone (Brazil)',
+							value: '+55 79 99944-7667',
+							href: 'tel:+5579999447667',
+							isExternal: false,
+						},
+						{
+							type: 'phone-ca',
+							label: 'Phone (Canada)',
+							value: '+1 236-863-5277',
+							href: 'tel:+12368635277',
+							isExternal: false,
+						},
+					]
+				}
+			}
 		}
 	}
 } as const
