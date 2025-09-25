@@ -100,6 +100,31 @@ export const EN = {
 					]
 				}
 			}
+		},
+		projects: {
+			sections: {
+				projects: {
+					title: "Projects",
+					data: [
+						{
+							image: "flamengo-project.png",
+							name: "Flamengo Website Clone",
+							description: "A clone of the official Flamengo football club website, built with HTML, CSS, and JavaScript.",
+							link: "https://flamengo-clone.netlify.app/",
+							repositoryLink: "https://github.com/CassioFig/flamengo-webpage",
+							technologies: ["HTML5", "CSS3", "JavaScript"]
+						},
+						{
+							image: "nec-project.png",
+							name: "Nec Cup Draft",
+							description: "A web application for drafting players for the Nec Cup.",
+							link: "https://nec-cup-draft.netlify.app/",
+							repositoryLink: "",
+							technologies: ["Next.js", "TypeScript"]
+						}
+					]
+				}
+			}
 		}
 	}
 } as const
