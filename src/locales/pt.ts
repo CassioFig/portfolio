@@ -32,71 +32,68 @@ export const PT = {
 		resume: {
 			sections: {
 				education: {
-					title: "Education",
+					title: "Educação",
 					data: [
 						{
-							degree: "Computer Science Bachelor’s degree",
-							institution: "Tiradentes University",
-							location: "Aracaju, Brazil",
-							period: "Jan. 2019 - July 2023",
+							degree: "Bacharelado em Ciência da Computação",
+							institution: "Universidade Tiradentes",
+							location: "Aracaju, Brasil",
+							period: "Jan. 2019 - Jul. 2023",
 						},
 						{
-							degree: "Web Developer Co-op Diploma ",
+							degree: "Diploma de Desenvolvedor Web Co-op",
 							institution: "Tamwood Careers College",
-							location: "Vancouver, Canada",
-							period: "Apr. 2025 - May 2026",
+							location: "Vancouver, Canadá",
+							period: "Abril 2025 - Maio 2026",
 						}
 					]
 				},
 				experience: {
-					title: "Experience",
+					title: "Experiência",
 					data: [
 						{
 							company: "Tiradentes Group",
-							location: "Aracaju, Brazil",
+							location: "Aracaju, Brasil",
 							history: [
 								{
-									position: "Data Analytics Intern",
-									period: "May 2021 - Oct. 2021",
-									description: `
-										Developed backend solutions using the Node.js, Express, TypeScript, PostgreSQL, and Redis stack, focusing on performance, scalability, and maintainability.
-										Designed and implemented new web applications using React, delivering user-friendly interfaces and responsive components.
-										Applied SOLID principles, Clean Architecture, and design patterns to ensure clean, testable, and scalable codebases.
-										Participated in the integration of payment systems, ensuring secure and reliable transaction processing.
-										Utilized Google Cloud Platform (GCP) to deploy applications.
-										Led a team of interns in the development of a new system, coordinating tasks, reviewing code, and ensuring on-time delivery. This initiative reduced development time by 40% and significantly boosted team performance.
+									position: "Estagiário em Análise de Dados",
+									period: "Maio 2021 - Out. 2021",
+									description: `Desenvolveu painéis em Power BI para a alta administração, automatizando relatórios baseados em Excel e economizando mais de 10 horas por semana de trabalho manual;
+										Utilizou processos ETL com Python e Pentaho;
+										Realizou análise de dados com PySpark;
+										Criou e otimizou consultas SQL complexas para processar conjuntos de dados com mais de 1 milhão de registros;
+										Gerenciou o data warehouse corporativo utilizando Oracle Database, garantindo integridade, desempenho e escalabilidade dos dados para operações analíticas;
+										Colaborou no desenvolvimento de uma funcionalidade que permite a estudantes universitários acompanhar o progresso acadêmico, beneficiando mais de 2.000 alunos;
 									`,
-									technologies: ["React, Node.js, TypeScript, PostgreSQL, Redis, GCP"]
+									technologies: ["Python", "PySpark", "Pentaho", "Power BI", "Oracle"]
 								},
 								{
-									position: "IT Developer",
+									position: "Desenvolvedor de TI",
 									period: "Nov. 2021 - Jan. 2024",
-									description: `
-										Developed Power BI dashboards for senior management, automating Excel-based reports and saving 10+ hours per week of manual work;
-										Utilization of ETL processes with Python and Pentaho;
-										Data analysis with PySpark;
-										Created and optimized complex SQL queries to process datasets with over 1 million records;
-										Managed the corporate data warehouse using Oracle Database, ensuring data integrity, performance, and scalability for analytical operations;
-										Collaborated on a feature that allows university students to track academic progress, benefiting over 2,000 students;
+									description: `Desenvolveu soluções de backend utilizando a stack Node.js, Express, TypeScript, PostgreSQL e Redis, com foco em desempenho, escalabilidade e manutenibilidade;
+									Projetou e implementou novas aplicações web utilizando React, entregando interfaces amigáveis e componentes responsivos;
+									Aplicou os princípios SOLID, Arquitetura Limpa e padrões de projeto para garantir bases de código limpas, testáveis e escaláveis;
+									Participou da integração de sistemas de pagamento, garantindo processamento de transações seguro e confiável. Utilizou a Google Cloud Platform (GCP) para implantação de aplicações;
+									Utilizou a Google Cloud Platform (GCP) para implantação de aplicações;
+									Liderou uma equipe de estagiários no desenvolvimento de um novo sistema, coordenando tarefas, revisando código e garantindo entrega dentro do prazo; Essa iniciativa reduziu o tempo de desenvolvimento em 40% e aumentou significativamente o desempenho da equipe;
 									`,
-									technologies: ["Python, PySpark, Pentaho, Power BI, Oracle"]
+									technologies: ["React", "Node.js", "TypeScript", "PostgreSQL", "Redis", "GCP"]
 								}
 							]
 						},
 						{
 							company: "INFOX",
-							location: "Aracaju, Brazil",
+							location: "Aracaju, Brasil",
 							history: [
 								{
-									position: "Java Developer",
-									period: "Feb. 2024 - April 2025",
-									description: `
-										Responsible for the maintenance and evolution of Infox BPM and Infox eCP, business process management (BPM) solutions that enable the modeling and automation of business processes;
-										Developed backend solutions using Java 8, Criteria, Hibernate, JPA, and Jboss;
-										Managed and maintained databases using Liquibase, PostgreSQL, and SQLServer;
-										Provided customer support and resolved technical issues for TCE-PE, TCM-PA, TCM-BA, and CFM, ensuring high customer satisfaction and operational efficiency;
+									position: "Desenvolvedor Java",
+									period: "Fev. 2024 - Abril 2025",
+									description: `Responsável pela manutenção e evolução do Infox BPM e Infox eCP, soluções de gerenciamento de processos de negócios (BPM) que permitem a modelagem e automação de processos empresariais;
+										Desenvolveu soluções de backend utilizando Java 8, Criteria, Hibernate, JPA e Jboss;
+										Gerenciou e manteve bancos de dados utilizando Liquibase, PostgreSQL e SQLServer;
+										Prestou suporte ao cliente e resolveu problemas técnicos para TCE-PE, TCM-PA, TCM-BA e CFM, garantindo alta satisfação do cliente e eficiência operacional;
 									`,
-									technologies: ["Java, Criteria, Hibernate, JPA, JSF, Jboss, Liquibase, PostgreSQL, SQLServer"]
+									technologies: ["Java", "Criteria", "Hibernate", "JPA", "JSF", "Jboss", "Liquibase", "PostgreSQL", "SQLServer"]
 								}
 							]
 						}
@@ -120,7 +117,7 @@ export const PT = {
 						{
 							image: "nec-project.png",
 							name: "Nec Cup Draft",
-							description: "Uma aplicação web para draftar jogadores para a Copa Nec.",
+							description: "Uma aplicação web para realizar o draft de jogadores para a Copa Nec.",
 							link: "https://nec-cup-draft.netlify.app/",
 							repositoryLink: "",
 							technologies: ["Next.js", "TypeScript"]
@@ -132,12 +129,12 @@ export const PT = {
 		contact: {
 			sections: {
 				contact: {
-					title: "Contact",
-					description: "Get in touch with me through any of the channels below. I'm always open to discussing new opportunities and interesting projects.",
+					title: "Contato",
+					description: "Entre em contato comigo através de qualquer um dos canais abaixo. Estou sempre aberto a discutir novas oportunidades e projetos interessantes.",
 					data: [
 						{
 							type: "email",
-							label: "Email",
+							label: "E-mail",
 							value: "cassio.figueiredof@gmail.com",
 							href: "mailto:cassio.figueiredof@gmail.com",
 							isExternal: false,
@@ -158,14 +155,14 @@ export const PT = {
 						},
 						{
 							type: 'phone-br',
-							label: 'Phone (Brazil)',
+							label: 'Telefone (Brasil)',
 							value: '+55 79 99944-7667',
 							href: 'tel:+5579999447667',
 							isExternal: false,
 						},
 						{
 							type: 'phone-ca',
-							label: 'Phone (Canada)',
+							label: 'Telefone (Canadá)',
 							value: '+1 236-863-5277',
 							href: 'tel:+12368635277',
 							isExternal: false,
