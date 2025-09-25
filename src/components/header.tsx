@@ -20,7 +20,7 @@ export const Header: React.FC = () => {
 						<defs>
 							<path id="circle" d="M 70, 70 m -55, 0 a 55,55 0 1,1 110,0 a 55,55 0 1,1 -110,0" />
 						</defs>
-						<text className="text-[11px] font-medium tracking-wider animate-spin origin-center" style={{fill: 'var(--color-green-1)', animationDuration: '20s'}}>
+						<text className="font-medium tracking-wider animate-spin origin-center" style={{fill: 'var(--color-green-1)', animationDuration: '20s', fontSize: '11.5px'}}>
 							<textPath href="#circle" startOffset="0%">
 								{t.header.logo}
 							</textPath>
