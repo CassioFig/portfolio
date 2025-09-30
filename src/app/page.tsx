@@ -2,7 +2,6 @@
 
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
-import me_pixar from '../assets/images/me_pixar.webp';
 import me from '../assets/images/me.jpeg';
 import { CodeXml, Server, TabletSmartphone } from 'lucide-react';
 import { useLocale } from '@/contexts/locale-context';
@@ -78,7 +77,7 @@ export default function Home() {
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [sections]);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -92,7 +91,7 @@ export default function Home() {
       <div className="fixed top-32 right-8 z-40 bg-black/80 backdrop-blur-sm rounded-2xl p-4 shadow-2xl border border-dark">
         <div className="relative flex flex-col items-start">
           <div className="absolute left-4 top-4 bottom-4 w-px bg-gradient-to-b from-gray-600 to-gray-700 z-0" style={{ right: 'auto' }} />
-          {sections.map((section, index) => (
+          {sections.map((section) => (
             <div key={section.id} className="relative z-10 flex items-center min-h-[40px]">
               <button
                 onClick={() => scrollToSection(section.id)}

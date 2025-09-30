@@ -18,13 +18,14 @@ export default function Projects() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {t.pages.projects.sections.projects.data.map((project, index) => (
+          {t.pages.projects.sections.projects.data.map((project) => (
             <div
               key={project.name}
               className="group border-dark border-2 rounded-lg overflow-hidden hover:border-green-400/50 transition-all duration-500 hover:shadow-2xl hover:shadow-green-400/10 bg-black flex flex-col h-full"
             >
               <div className="relative overflow-hidden">
                 <Image
+                  // eslint-disable-next-line @typescript-eslint/no-require-imports
                   src={require(`../../assets/images/${project.image}`)}
                   alt={project.name}
                   className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"
