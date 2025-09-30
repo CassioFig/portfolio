@@ -153,20 +153,6 @@ export const PT = {
 							href: 'https://www.linkedin.com/in/cassiofig/',
 							isExternal: true,
 						},
-						{
-							type: 'phone-br',
-							label: 'Telefone (Brasil)',
-							value: '+55 79 99944-7667',
-							href: 'tel:+5579999447667',
-							isExternal: false,
-						},
-						{
-							type: 'phone-ca',
-							label: 'Telefone (Canadá)',
-							value: '+1 236-863-5277',
-							href: 'tel:+12368635277',
-							isExternal: false,
-						},
 					]
 				}
 			}
